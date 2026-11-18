@@ -1,0 +1,3 @@
+# The course generator, dashboard, and tests use only the Python standard library.
+# Frameworks and provider SDKs are introduced in their lessons and are not required
+# to generate or browse this course.

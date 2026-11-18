@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Practice Docker, AWS, Grafana, Prometheus, Kubernetes, Terraform, Ansible, Git, Jenkins, and GitHub Actions in safe local simulations.">
+  <title>DevOps Console Studio | Python Full Stack + AI Academy</title>
+  <link rel="stylesheet" href="../frontend/css/style.css">
+</head>
+<body class="console-body">
+  <main class="console-app">
+    <header class="console-topbar">
+      <a class="console-brand" href="../frontend/index.html">Python Full Stack + AI Academy</a>
+      <span class="simulation-badge"><span aria-hidden="true"></span> SIMULATION ONLY · NO REAL CONNECTIONS</span>
+      <button type="button" class="secondary" id="reset-console">Reset all mock state</button>
+    </header>
+
+    <div class="console-layout">
+      <nav class="console-sidebar" aria-label="Practice consoles">
+        <p class="console-nav-heading">PRACTICE CONSOLES</p>
+        <button type="button" data-service="docker" aria-pressed="true"><span>▣</span> Docker</button>
+        <button type="button" data-service="aws" aria-pressed="false"><span>☁</span> AWS</button>
+        <button type="button" data-service="grafana" aria-pressed="false"><span>◉</span> Grafana</button>
+        <button type="button" data-service="prometheus" aria-pressed="false"><span>◌</span> Prometheus</button>
+        <button type="button" data-service="kubernetes" aria-pressed="false"><span>⬡</span> Kubernetes</button>
+        <button type="button" data-service="terraform" aria-pressed="false"><span>▤</span> Terraform</button>
+        <button type="button" data-service="ansible" aria-pressed="false"><span>▦</span> Ansible</button>
+        <button type="button" data-service="git" aria-pressed="false"><span>⑂</span> Git</button>
+        <button type="button" data-service="jenkins" aria-pressed="false"><span>⚙</span> Jenkins</button>
+        <button type="button" data-service="actions" aria-pressed="false"><span>▶</span> GitHub Actions</button>
+        <a href="../visualizations/index.html?lab=devops">Open infrastructure diagrams →</a>
+      </nav>
+
+      <section class="console-workspace" aria-labelledby="console-title">
+        <div class="console-breadcrumb"><a href="../frontend/index.html">Academy</a> / Practice consoles</div>
+        <header class="console-service-header">
+          <div>
+            <p class="lab-kicker" id="console-category">CONTAINER PRACTICE</p>
+            <h1 id="console-title">Docker Console</h1>
+            <p id="console-description">Inspect images and containers, then practice a small local lifecycle.</p>
+          </div>
+          <div class="console-service-health"><span class="health-dot"></span><span id="service-status">Mock environment ready</span></div>
+        </header>
+
+        <div class="console-warning" role="note">
+          <strong>Isolated practice sandbox.</strong>
+          Commands and queries are matched against a fixed local simulator. Nothing is sent to a shell, Docker daemon, cloud account, cluster, repository, or monitoring service.
+        </div>
+
+        <section class="console-summary-grid" aria-label="Mock service status">
+          <article class="console-stat"><span>Environment</span><strong>academy-demo</strong></article>
+          <article class="console-stat"><span>Account / cluster</span><strong id="mock-context">local-sandbox</strong></article>
+          <article class="console-stat"><span>Current state</span><strong id="mock-state">Ready</strong></article>
+        </section>
+
+        <section class="console-command-card">
+          <header class="console-panel-heading">
+            <div><p class="lab-kicker">SUPPORTED PRACTICE COMMANDS</p><h2>Try a command</h2></div>
+            <span class="read-only-label">Allowlisted inputs · synthetic output</span>
+          </header>
+          <div id="command-chips" class="command-chips" aria-label="Example commands"></div>
+          <details class="console-help">
+            <summary>Show supported commands and concepts</summary>
+            <p id="command-guide"></p>
+          </details>
+        </section>
+
+        <section class="console-terminal-panel" aria-labelledby="terminal-heading">
+          <header class="terminal-titlebar">
+            <div><span class="terminal-lights" aria-hidden="true"><i></i><i></i><i></i></span><h2 id="terminal-heading">Practice terminal</h2></div>
+            <button type="button" class="terminal-clear" id="clear-terminal">Clear output</button>
+          </header>
+          <div id="terminal-output" class="terminal-output" role="log" aria-live="polite" aria-relevant="additions text">
+            <p class="terminal-system">Welcome to the academy simulation. Select a service and try one of its listed commands.</p>
+          </div>
+          <form id="command-form" class="terminal-form" autocomplete="off">
+            <label for="command-input"><span id="terminal-prompt">docker &gt;</span><span class="visually-hidden">Practice command or query</span></label>
+            <input id="command-input" name="command" type="text" maxlength="240" spellcheck="false" placeholder="Type a supported command…" aria-describedby="command-safety" required>
+            <button type="submit">Run simulation</button>
+          </form>
+          <p id="command-safety" class="small-print">Commands are interpreted only by this page's fixed mock handlers. Shell chaining, scripts, and arbitrary execution are not supported.</p>
+          <label class="mock-approval" for="confirm-mock-change">
+            <input id="confirm-mock-change" type="checkbox">
+            <span>I understand state-changing commands modify only this browser-session simulation.</span>
+          </label>
+          <p id="console-feedback" class="console-feedback" role="status" aria-live="polite">Read-only examples can be run immediately. Simulated changes require the confirmation above.</p>
+        </section>
+
+        <section class="console-learning panel">
+          <h2>Practice loop</h2>
+          <ol><li>Read the expected command in the help panel.</li><li>Predict the output before running it.</li><li>Try a state change only after checking the simulation box.</li><li>Reset the mock environment to repeat the exercise.</li></ol>
+          <p><strong>Reminder:</strong> These are learning replicas, not official vendor consoles or secure management interfaces. Never paste credentials or secrets here.</p>
+        </section>
+      </section>
+    </div>
+  </main>
+  <script src="../frontend/js/console-studio.js" defer></script>
+</body>
+</html>

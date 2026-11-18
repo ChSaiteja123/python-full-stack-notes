@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A visual, concept-first 180-day Python Full Stack and AI learning path.">
+  <title>Python Full Stack + AI Academy</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="dashboard">
+    <header class="dashboard-hero">
+      <p class="eyebrow">180 DAYS · 6 MONTHS · CONCEPT-NAMED LESSONS</p>
+      <h1>Python Full Stack + AI Academy</h1>
+      <p>Learn Python, web development, Django, APIs, AI application patterns, and production practices one verified concept at a time.</p>
+      <div class="hero-links">
+        <a href="../COURSE_ROADMAP.md">Open the course roadmap</a>
+        <a href="../visualizations/index.html">Explore interactive visualizations</a>
+        <a href="../visualizations/index.html?lab=devops">Explore Docker, AWS, Terraform, Ansible, Git, and Kubernetes labs</a>
+        <a href="../consoles/index.html">Practice in the DevOps Console Studio</a>
+        <a href="../examples/">Study Python examples from zero to advanced</a>
+        <a href="../projects/learning-ladder/">Build the zero-to-advanced project ladder</a>
+        <a href="../projects/PROJECT_CATALOG.md">Browse project briefs</a>
+      </div>
+    </header>
+
+    <section class="progress-panel panel" aria-labelledby="progress-title">
+      <div>
+        <h2 id="progress-title">Your learning progress</h2>
+        <p id="progress-summary" aria-live="polite">Loading course catalog…</p>
+      </div>
+      <div class="progress-track" role="progressbar" aria-label="Course progress" aria-valuemin="0" aria-valuemax="180" aria-valuenow="0">
+        <span id="progress-bar"></span>
+      </div>
+      <p id="app-status" class="status" role="status"></p>
+    </section>
+
+    <section class="controls-panel panel" aria-label="Find lessons">
+      <label for="lesson-search">Search concepts
+        <input id="lesson-search" type="search" placeholder="Try: functions, Django, security…" autocomplete="off">
+      </label>
+      <label for="month-filter">Month
+        <select id="month-filter">
+          <option value="all">All months</option>
+        </select>
+      </label>
+      <label class="show-bookmarks"><input id="bookmarks-only" type="checkbox"> Bookmarks only</label>
+    </section>
+
+    <section class="course-layout">
+      <div id="course-content" aria-live="polite"></div>
+      <aside class="notes-panel panel">
+        <h2>Study notes</h2>
+        <p id="selected-lesson">Choose a lesson to keep a private note in this browser.</p>
+        <label for="lesson-notes">Your notes
+          <textarea id="lesson-notes" rows="10" placeholder="Questions, examples, and what you want to review…"></textarea>
+        </label>
+        <button id="save-note" type="button">Save note</button>
+        <p class="small-print">Progress, bookmarks, and notes stay in this browser's local storage. Do not store passwords or secrets here.</p>
+      </aside>
+    </section>
+  </main>
+  <script src="js/app.js" defer></script>
+</body>
+</html>

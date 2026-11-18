@@ -1,0 +1,1313 @@
+{
+  "course": "Python Full Stack + AI Application + AI Agent Development",
+  "months": [
+    {
+      "number": 1,
+      "slug": "month-01-python-fundamentals",
+      "name": "Python Programming Fundamentals",
+      "focus": "Python syntax, data, control flow, functions, files, and a first command-line application.",
+      "lessons": [
+        {
+          "day": 1,
+          "title": "Introduction to programming and Python",
+          "slug": "introduction-to-programming-and-python",
+          "markdown": "../curriculum/month-01-python-fundamentals/introduction-to-programming-and-python/README.md",
+          "html": "../curriculum/month-01-python-fundamentals/introduction-to-programming-and-python/lesson.html"
+        },
+        {
+          "day": 2,
+          "title": "Installing Python and VS Code",
+          "slug": "installing-python-and-vs-code",
+          "markdown": "../curriculum/month-01-python-fundamentals/installing-python-and-vs-code/README.md",
+          "html": "../curriculum/month-01-python-fundamentals/installing-python-and-vs-code/lesson.html"
+        },
+        {
+          "day": 3,
+          "title": "Python interpreter and execution",
+          "slug": "python-interpreter-and-execution",
+          "markdown": "../curriculum/month-01-python-fundamentals/python-interpreter-and-execution/README.md",
+          "html": "../curriculum/month-01-python-fundamentals/python-interpreter-and-execution/lesson.html"
+        },
+        {
+          "day": 4,
+          "title": "Variables and naming conventions",
+          "slug": "variables-and-naming-conventions",
+          "markdown": "../curriculum/month-01-python-fundamentals/variables-and-naming-conventions/README.md",
+          "html": "../curriculum/month-01-python-fundamentals/variables-and-naming-conventions/lesson.html"
+        },
+        {
+          "day": 5,
+          "title": "Data types",
+          "slug": "data-types",
+          "markdown": "../curriculum/month-01-python-fundamentals/data-types/README.md",
+          "html": "../curriculum/month-01-python-fundamentals/data-types/lesson.html"
+        },
+        {
+          "day": 6,
+          "title": "Type conversion",
+          "slug": "type-conversion",
+          "markdown": "../curriculum/month-01-python-fundamentals/type-conversion/README.md",
+          "html": "../curriculum/month-01-python-fundamentals/type-conversion/lesson.html"
+        },
+        {
+          "day": 7,
+          "title": "Operators",
+          "slug": "operators",
+          "markdown": "../curriculum/month-01-python-fundamentals/operators/README.md",
+          "html": "../curriculum/month-01-python-fundamentals/operators/lesson.html"
+        },
+        {
+          "day": 8,
+          "title": "Input and output",
+          "slug": "input-and-output",
+          "markdown": "../curriculum/month-01-python-fundamentals/input-and-output/README.md",
+          "html": "../curriculum/month-01-python-fundamentals/input-and-output/lesson.html"
+        },
+        {
+          "day": 9,
+          "title": "Strings",
+          "slug": "strings",
+          "markdown": "../curriculum/month-01-python-fundamentals/strings/README.md",
+          "html": "../curriculum/month-01-python-fundamentals/strings/lesson.html"
+        },
+        {
+          "day": 10,
+          "title": "String methods",
+          "slug": "string-methods",
+          "markdown": "../curriculum/month-01-python-fundamentals/string-methods/README.md",
+          "html": "../curriculum/month-01-python-fundamentals/string-methods/lesson.html"
+        },
+        {
+          "day": 11,
+          "title": "Conditional statements",
+          "slug": "conditional-statements",
+          "markdown": "../curriculum/month-01-python-fundamentals/conditional-statements/README.md",
+          "html": "../curriculum/month-01-python-fundamentals/conditional-statements/lesson.html"
+        },
+        {
+          "day": 12,
+          "title": "Nested conditions",
+          "slug": "nested-conditions",
+          "markdown": "../curriculum/month-01-python-fundamentals/nested-conditions/README.md",
+          "html": "../curriculum/month-01-python-fundamentals/nested-conditions/lesson.html"
+        },
+        {
+          "day": 13,
+          "title": "For loops",
+          "slug": "for-loops",
+          "markdown": "../curriculum/month-01-python-fundamentals/for-loops/README.md",
+          "html": "../curriculum/month-01-python-fundamentals/for-loops/lesson.html"
+        },
+        {
+          "day": 14,
+          "title": "While loops",
+          "slug": "while-loops",
+          "markdown": "../curriculum/month-01-python-fundamentals/while-loops/README.md",
+          "html": "../curriculum/month-01-python-fundamentals/while-loops/lesson.html"
+        },
+        {
+          "day": 15,
+          "title": "Break, continue, pass",
+          "slug": "break-continue-pass",
+          "markdown": "../curriculum/month-01-python-fundamentals/break-continue-pass/README.md",
+          "html": "../curriculum/month-01-python-fundamentals/break-continue-pass/lesson.html"
+        },
+        {
+          "day": 16,
+          "title": "Lists",
+          "slug": "lists",
+          "markdown": "../curriculum/month-01-python-fundamentals/lists/README.md",
+          "html": "../curriculum/month-01-python-fundamentals/lists/lesson.html"
+        },
+        {
+          "day": 17,
+          "title": "Tuples",
+          "slug": "tuples",
+          "markdown": "../curriculum/month-01-python-fundamentals/tuples/README.md",
+          "html": "../curriculum/month-01-python-fundamentals/tuples/lesson.html"
+        },
+        {
+          "day": 18,
+          "title": "Sets",
+          "slug": "sets",
+          "markdown": "../curriculum/month-01-python-fundamentals/sets/README.md",
+          "html": "../curriculum/month-01-python-fundamentals/sets/lesson.html"
+        },
+        {
+          "day": 19,
+          "title": "Dictionaries",
+          "slug": "dictionaries",
+          "markdown": "../curriculum/month-01-python-fundamentals/dictionaries/README.md",
+          "html": "../curriculum/month-01-python-fundamentals/dictionaries/lesson.html"
+        },
+        {
+          "day": 20,
+          "title": "List and dictionary methods",
+          "slug": "list-and-dictionary-methods",
+          "markdown": "../curriculum/month-01-python-fundamentals/list-and-dictionary-methods/README.md",
+          "html": "../curriculum/month-01-python-fundamentals/list-and-dictionary-methods/lesson.html"
+        },
+        {
+          "day": 21,
+          "title": "Functions",
+          "slug": "functions",
+          "markdown": "../curriculum/month-01-python-fundamentals/functions/README.md",
+          "html": "../curriculum/month-01-python-fundamentals/functions/lesson.html"
+        },
+        {
+          "day": 22,
+          "title": "Parameters and arguments",
+          "slug": "parameters-and-arguments",
+          "markdown": "../curriculum/month-01-python-fundamentals/parameters-and-arguments/README.md",
+          "html": "../curriculum/month-01-python-fundamentals/parameters-and-arguments/lesson.html"
+        },
+        {
+          "day": 23,
+          "title": "Return statements and scope",
+          "slug": "return-statements-and-scope",
+          "markdown": "../curriculum/month-01-python-fundamentals/return-statements-and-scope/README.md",
+          "html": "../curriculum/month-01-python-fundamentals/return-statements-and-scope/lesson.html"
+        },
+        {
+          "day": 24,
+          "title": "Lambda functions",
+          "slug": "lambda-functions",
+          "markdown": "../curriculum/month-01-python-fundamentals/lambda-functions/README.md",
+          "html": "../curriculum/month-01-python-fundamentals/lambda-functions/lesson.html"
+        },
+        {
+          "day": 25,
+          "title": "Modules and packages",
+          "slug": "modules-and-packages",
+          "markdown": "../curriculum/month-01-python-fundamentals/modules-and-packages/README.md",
+          "html": "../curriculum/month-01-python-fundamentals/modules-and-packages/lesson.html"
+        },
+        {
+          "day": 26,
+          "title": "Exception handling",
+          "slug": "exception-handling",
+          "markdown": "../curriculum/month-01-python-fundamentals/exception-handling/README.md",
+          "html": "../curriculum/month-01-python-fundamentals/exception-handling/lesson.html"
+        },
+        {
+          "day": 27,
+          "title": "File handling",
+          "slug": "file-handling",
+          "markdown": "../curriculum/month-01-python-fundamentals/file-handling/README.md",
+          "html": "../curriculum/month-01-python-fundamentals/file-handling/lesson.html"
+        },
+        {
+          "day": 28,
+          "title": "JSON and CSV",
+          "slug": "json-and-csv",
+          "markdown": "../curriculum/month-01-python-fundamentals/json-and-csv/README.md",
+          "html": "../curriculum/month-01-python-fundamentals/json-and-csv/lesson.html"
+        },
+        {
+          "day": 29,
+          "title": "Mini project: Student Management System",
+          "slug": "mini-project-student-management-system",
+          "markdown": "../curriculum/month-01-python-fundamentals/mini-project-student-management-system/README.md",
+          "html": "../curriculum/month-01-python-fundamentals/mini-project-student-management-system/lesson.html"
+        },
+        {
+          "day": 30,
+          "title": "Month 1 revision and assessment",
+          "slug": "month-1-revision-and-assessment",
+          "markdown": "../curriculum/month-01-python-fundamentals/month-1-revision-and-assessment/README.md",
+          "html": "../curriculum/month-01-python-fundamentals/month-1-revision-and-assessment/lesson.html"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "slug": "month-02-professional-python-and-apis",
+      "name": "Professional Python and APIs",
+      "focus": "Object-oriented design, Python protocols, testing, type hints, HTTP clients, and asynchronous work.",
+      "lessons": [
+        {
+          "day": 31,
+          "title": "Object-oriented programming introduction",
+          "slug": "object-oriented-programming-introduction",
+          "markdown": "../curriculum/month-02-professional-python-and-apis/object-oriented-programming-introduction/README.md",
+          "html": "../curriculum/month-02-professional-python-and-apis/object-oriented-programming-introduction/lesson.html"
+        },
+        {
+          "day": 32,
+          "title": "Classes and objects",
+          "slug": "classes-and-objects",
+          "markdown": "../curriculum/month-02-professional-python-and-apis/classes-and-objects/README.md",
+          "html": "../curriculum/month-02-professional-python-and-apis/classes-and-objects/lesson.html"
+        },
+        {
+          "day": 33,
+          "title": "Constructors and self",
+          "slug": "constructors-and-self",
+          "markdown": "../curriculum/month-02-professional-python-and-apis/constructors-and-self/README.md",
+          "html": "../curriculum/month-02-professional-python-and-apis/constructors-and-self/lesson.html"
+        },
+        {
+          "day": 34,
+          "title": "Instance and class variables",
+          "slug": "instance-and-class-variables",
+          "markdown": "../curriculum/month-02-professional-python-and-apis/instance-and-class-variables/README.md",
+          "html": "../curriculum/month-02-professional-python-and-apis/instance-and-class-variables/lesson.html"
+        },
+        {
+          "day": 35,
+          "title": "Inheritance",
+          "slug": "inheritance",
+          "markdown": "../curriculum/month-02-professional-python-and-apis/inheritance/README.md",
+          "html": "../curriculum/month-02-professional-python-and-apis/inheritance/lesson.html"
+        },
+        {
+          "day": 36,
+          "title": "Multiple inheritance",
+          "slug": "multiple-inheritance",
+          "markdown": "../curriculum/month-02-professional-python-and-apis/multiple-inheritance/README.md",
+          "html": "../curriculum/month-02-professional-python-and-apis/multiple-inheritance/lesson.html"
+        },
+        {
+          "day": 37,
+          "title": "Polymorphism",
+          "slug": "polymorphism",
+          "markdown": "../curriculum/month-02-professional-python-and-apis/polymorphism/README.md",
+          "html": "../curriculum/month-02-professional-python-and-apis/polymorphism/lesson.html"
+        },
+        {
+          "day": 38,
+          "title": "Encapsulation",
+          "slug": "encapsulation",
+          "markdown": "../curriculum/month-02-professional-python-and-apis/encapsulation/README.md",
+          "html": "../curriculum/month-02-professional-python-and-apis/encapsulation/lesson.html"
+        },
+        {
+          "day": 39,
+          "title": "Abstraction",
+          "slug": "abstraction",
+          "markdown": "../curriculum/month-02-professional-python-and-apis/abstraction/README.md",
+          "html": "../curriculum/month-02-professional-python-and-apis/abstraction/lesson.html"
+        },
+        {
+          "day": 40,
+          "title": "Magic methods",
+          "slug": "magic-methods",
+          "markdown": "../curriculum/month-02-professional-python-and-apis/magic-methods/README.md",
+          "html": "../curriculum/month-02-professional-python-and-apis/magic-methods/lesson.html"
+        },
+        {
+          "day": 41,
+          "title": "Iterators and iterables",
+          "slug": "iterators-and-iterables",
+          "markdown": "../curriculum/month-02-professional-python-and-apis/iterators-and-iterables/README.md",
+          "html": "../curriculum/month-02-professional-python-and-apis/iterators-and-iterables/lesson.html"
+        },
+        {
+          "day": 42,
+          "title": "Generators",
+          "slug": "generators",
+          "markdown": "../curriculum/month-02-professional-python-and-apis/generators/README.md",
+          "html": "../curriculum/month-02-professional-python-and-apis/generators/lesson.html"
+        },
+        {
+          "day": 43,
+          "title": "Decorators",
+          "slug": "decorators",
+          "markdown": "../curriculum/month-02-professional-python-and-apis/decorators/README.md",
+          "html": "../curriculum/month-02-professional-python-and-apis/decorators/lesson.html"
+        },
+        {
+          "day": 44,
+          "title": "Context managers",
+          "slug": "context-managers",
+          "markdown": "../curriculum/month-02-professional-python-and-apis/context-managers/README.md",
+          "html": "../curriculum/month-02-professional-python-and-apis/context-managers/lesson.html"
+        },
+        {
+          "day": 45,
+          "title": "Comprehensions",
+          "slug": "comprehensions",
+          "markdown": "../curriculum/month-02-professional-python-and-apis/comprehensions/README.md",
+          "html": "../curriculum/month-02-professional-python-and-apis/comprehensions/lesson.html"
+        },
+        {
+          "day": 46,
+          "title": "Regular expressions",
+          "slug": "regular-expressions",
+          "markdown": "../curriculum/month-02-professional-python-and-apis/regular-expressions/README.md",
+          "html": "../curriculum/month-02-professional-python-and-apis/regular-expressions/lesson.html"
+        },
+        {
+          "day": 47,
+          "title": "Date and time",
+          "slug": "date-and-time",
+          "markdown": "../curriculum/month-02-professional-python-and-apis/date-and-time/README.md",
+          "html": "../curriculum/month-02-professional-python-and-apis/date-and-time/lesson.html"
+        },
+        {
+          "day": 48,
+          "title": "Logging",
+          "slug": "logging",
+          "markdown": "../curriculum/month-02-professional-python-and-apis/logging/README.md",
+          "html": "../curriculum/month-02-professional-python-and-apis/logging/lesson.html"
+        },
+        {
+          "day": 49,
+          "title": "Debugging",
+          "slug": "debugging",
+          "markdown": "../curriculum/month-02-professional-python-and-apis/debugging/README.md",
+          "html": "../curriculum/month-02-professional-python-and-apis/debugging/lesson.html"
+        },
+        {
+          "day": 50,
+          "title": "Unit testing with unittest",
+          "slug": "unit-testing-with-unittest",
+          "markdown": "../curriculum/month-02-professional-python-and-apis/unit-testing-with-unittest/README.md",
+          "html": "../curriculum/month-02-professional-python-and-apis/unit-testing-with-unittest/lesson.html"
+        },
+        {
+          "day": 51,
+          "title": "Pytest fundamentals",
+          "slug": "pytest-fundamentals",
+          "markdown": "../curriculum/month-02-professional-python-and-apis/pytest-fundamentals/README.md",
+          "html": "../curriculum/month-02-professional-python-and-apis/pytest-fundamentals/lesson.html"
+        },
+        {
+          "day": 52,
+          "title": "Type hints",
+          "slug": "type-hints",
+          "markdown": "../curriculum/month-02-professional-python-and-apis/type-hints/README.md",
+          "html": "../curriculum/month-02-professional-python-and-apis/type-hints/lesson.html"
+        },
+        {
+          "day": 53,
+          "title": "Dataclasses",
+          "slug": "dataclasses",
+          "markdown": "../curriculum/month-02-professional-python-and-apis/dataclasses/README.md",
+          "html": "../curriculum/month-02-professional-python-and-apis/dataclasses/lesson.html"
+        },
+        {
+          "day": 54,
+          "title": "Virtual environments and dependency management",
+          "slug": "virtual-environments-and-dependency-management",
+          "markdown": "../curriculum/month-02-professional-python-and-apis/virtual-environments-and-dependency-management/README.md",
+          "html": "../curriculum/month-02-professional-python-and-apis/virtual-environments-and-dependency-management/lesson.html"
+        },
+        {
+          "day": 55,
+          "title": "HTTP fundamentals",
+          "slug": "http-fundamentals",
+          "markdown": "../curriculum/month-02-professional-python-and-apis/http-fundamentals/README.md",
+          "html": "../curriculum/month-02-professional-python-and-apis/http-fundamentals/lesson.html"
+        },
+        {
+          "day": 56,
+          "title": "Requests library and APIs",
+          "slug": "requests-library-and-apis",
+          "markdown": "../curriculum/month-02-professional-python-and-apis/requests-library-and-apis/README.md",
+          "html": "../curriculum/month-02-professional-python-and-apis/requests-library-and-apis/lesson.html"
+        },
+        {
+          "day": 57,
+          "title": "Async programming fundamentals",
+          "slug": "async-programming-fundamentals",
+          "markdown": "../curriculum/month-02-professional-python-and-apis/async-programming-fundamentals/README.md",
+          "html": "../curriculum/month-02-professional-python-and-apis/async-programming-fundamentals/lesson.html"
+        },
+        {
+          "day": 58,
+          "title": "Threading and multiprocessing",
+          "slug": "threading-and-multiprocessing",
+          "markdown": "../curriculum/month-02-professional-python-and-apis/threading-and-multiprocessing/README.md",
+          "html": "../curriculum/month-02-professional-python-and-apis/threading-and-multiprocessing/lesson.html"
+        },
+        {
+          "day": 59,
+          "title": "Project: Python REST API client",
+          "slug": "project-python-rest-api-client",
+          "markdown": "../curriculum/month-02-professional-python-and-apis/project-python-rest-api-client/README.md",
+          "html": "../curriculum/month-02-professional-python-and-apis/project-python-rest-api-client/lesson.html"
+        },
+        {
+          "day": 60,
+          "title": "Month 2 assessment",
+          "slug": "month-2-assessment",
+          "markdown": "../curriculum/month-02-professional-python-and-apis/month-2-assessment/README.md",
+          "html": "../curriculum/month-02-professional-python-and-apis/month-2-assessment/lesson.html"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "slug": "month-03-web-and-database-development",
+      "name": "Web and Database Development",
+      "focus": "Browser fundamentals, HTML, CSS, JavaScript, Git, HTTP, databases, and client-side interfaces.",
+      "lessons": [
+        {
+          "day": 61,
+          "title": "How the internet works",
+          "slug": "how-the-internet-works",
+          "markdown": "../curriculum/month-03-web-and-database-development/how-the-internet-works/README.md",
+          "html": "../curriculum/month-03-web-and-database-development/how-the-internet-works/lesson.html"
+        },
+        {
+          "day": 62,
+          "title": "Client-server architecture",
+          "slug": "client-server-architecture",
+          "markdown": "../curriculum/month-03-web-and-database-development/client-server-architecture/README.md",
+          "html": "../curriculum/month-03-web-and-database-development/client-server-architecture/lesson.html"
+        },
+        {
+          "day": 63,
+          "title": "HTTP and HTTPS",
+          "slug": "http-and-https",
+          "markdown": "../curriculum/month-03-web-and-database-development/http-and-https/README.md",
+          "html": "../curriculum/month-03-web-and-database-development/http-and-https/lesson.html"
+        },
+        {
+          "day": 64,
+          "title": "DNS and domains",
+          "slug": "dns-and-domains",
+          "markdown": "../curriculum/month-03-web-and-database-development/dns-and-domains/README.md",
+          "html": "../curriculum/month-03-web-and-database-development/dns-and-domains/lesson.html"
+        },
+        {
+          "day": 65,
+          "title": "HTML introduction",
+          "slug": "html-introduction",
+          "markdown": "../curriculum/month-03-web-and-database-development/html-introduction/README.md",
+          "html": "../curriculum/month-03-web-and-database-development/html-introduction/lesson.html"
+        },
+        {
+          "day": 66,
+          "title": "HTML document structure",
+          "slug": "html-document-structure",
+          "markdown": "../curriculum/month-03-web-and-database-development/html-document-structure/README.md",
+          "html": "../curriculum/month-03-web-and-database-development/html-document-structure/lesson.html"
+        },
+        {
+          "day": 67,
+          "title": "HTML forms and validation",
+          "slug": "html-forms-and-validation",
+          "markdown": "../curriculum/month-03-web-and-database-development/html-forms-and-validation/README.md",
+          "html": "../curriculum/month-03-web-and-database-development/html-forms-and-validation/lesson.html"
+        },
+        {
+          "day": 68,
+          "title": "Semantic HTML",
+          "slug": "semantic-html",
+          "markdown": "../curriculum/month-03-web-and-database-development/semantic-html/README.md",
+          "html": "../curriculum/month-03-web-and-database-development/semantic-html/lesson.html"
+        },
+        {
+          "day": 69,
+          "title": "CSS fundamentals",
+          "slug": "css-fundamentals",
+          "markdown": "../curriculum/month-03-web-and-database-development/css-fundamentals/README.md",
+          "html": "../curriculum/month-03-web-and-database-development/css-fundamentals/lesson.html"
+        },
+        {
+          "day": 70,
+          "title": "CSS selectors and box model",
+          "slug": "css-selectors-and-box-model",
+          "markdown": "../curriculum/month-03-web-and-database-development/css-selectors-and-box-model/README.md",
+          "html": "../curriculum/month-03-web-and-database-development/css-selectors-and-box-model/lesson.html"
+        },
+        {
+          "day": 71,
+          "title": "Flexbox",
+          "slug": "flexbox",
+          "markdown": "../curriculum/month-03-web-and-database-development/flexbox/README.md",
+          "html": "../curriculum/month-03-web-and-database-development/flexbox/lesson.html"
+        },
+        {
+          "day": 72,
+          "title": "CSS Grid",
+          "slug": "css-grid",
+          "markdown": "../curriculum/month-03-web-and-database-development/css-grid/README.md",
+          "html": "../curriculum/month-03-web-and-database-development/css-grid/lesson.html"
+        },
+        {
+          "day": 73,
+          "title": "Responsive web design",
+          "slug": "responsive-web-design",
+          "markdown": "../curriculum/month-03-web-and-database-development/responsive-web-design/README.md",
+          "html": "../curriculum/month-03-web-and-database-development/responsive-web-design/lesson.html"
+        },
+        {
+          "day": 74,
+          "title": "CSS animations and transitions",
+          "slug": "css-animations-and-transitions",
+          "markdown": "../curriculum/month-03-web-and-database-development/css-animations-and-transitions/README.md",
+          "html": "../curriculum/month-03-web-and-database-development/css-animations-and-transitions/lesson.html"
+        },
+        {
+          "day": 75,
+          "title": "JavaScript fundamentals",
+          "slug": "javascript-fundamentals",
+          "markdown": "../curriculum/month-03-web-and-database-development/javascript-fundamentals/README.md",
+          "html": "../curriculum/month-03-web-and-database-development/javascript-fundamentals/lesson.html"
+        },
+        {
+          "day": 76,
+          "title": "Variables and data types in JavaScript",
+          "slug": "variables-and-data-types-in-javascript",
+          "markdown": "../curriculum/month-03-web-and-database-development/variables-and-data-types-in-javascript/README.md",
+          "html": "../curriculum/month-03-web-and-database-development/variables-and-data-types-in-javascript/lesson.html"
+        },
+        {
+          "day": 77,
+          "title": "Conditions and loops",
+          "slug": "conditions-and-loops",
+          "markdown": "../curriculum/month-03-web-and-database-development/conditions-and-loops/README.md",
+          "html": "../curriculum/month-03-web-and-database-development/conditions-and-loops/lesson.html"
+        },
+        {
+          "day": 78,
+          "title": "Functions and arrays",
+          "slug": "functions-and-arrays",
+          "markdown": "../curriculum/month-03-web-and-database-development/functions-and-arrays/README.md",
+          "html": "../curriculum/month-03-web-and-database-development/functions-and-arrays/lesson.html"
+        },
+        {
+          "day": 79,
+          "title": "Objects and JSON",
+          "slug": "objects-and-json",
+          "markdown": "../curriculum/month-03-web-and-database-development/objects-and-json/README.md",
+          "html": "../curriculum/month-03-web-and-database-development/objects-and-json/lesson.html"
+        },
+        {
+          "day": 80,
+          "title": "DOM manipulation",
+          "slug": "dom-manipulation",
+          "markdown": "../curriculum/month-03-web-and-database-development/dom-manipulation/README.md",
+          "html": "../curriculum/month-03-web-and-database-development/dom-manipulation/lesson.html"
+        },
+        {
+          "day": 81,
+          "title": "Events and event handling",
+          "slug": "events-and-event-handling",
+          "markdown": "../curriculum/month-03-web-and-database-development/events-and-event-handling/README.md",
+          "html": "../curriculum/month-03-web-and-database-development/events-and-event-handling/lesson.html"
+        },
+        {
+          "day": 82,
+          "title": "Form validation",
+          "slug": "form-validation",
+          "markdown": "../curriculum/month-03-web-and-database-development/form-validation/README.md",
+          "html": "../curriculum/month-03-web-and-database-development/form-validation/lesson.html"
+        },
+        {
+          "day": 83,
+          "title": "Fetch API",
+          "slug": "fetch-api",
+          "markdown": "../curriculum/month-03-web-and-database-development/fetch-api/README.md",
+          "html": "../curriculum/month-03-web-and-database-development/fetch-api/lesson.html"
+        },
+        {
+          "day": 84,
+          "title": "Async JavaScript and promises",
+          "slug": "async-javascript-and-promises",
+          "markdown": "../curriculum/month-03-web-and-database-development/async-javascript-and-promises/README.md",
+          "html": "../curriculum/month-03-web-and-database-development/async-javascript-and-promises/lesson.html"
+        },
+        {
+          "day": 85,
+          "title": "Bootstrap",
+          "slug": "bootstrap",
+          "markdown": "../curriculum/month-03-web-and-database-development/bootstrap/README.md",
+          "html": "../curriculum/month-03-web-and-database-development/bootstrap/lesson.html"
+        },
+        {
+          "day": 86,
+          "title": "Git fundamentals",
+          "slug": "git-fundamentals",
+          "markdown": "../curriculum/month-03-web-and-database-development/git-fundamentals/README.md",
+          "html": "../curriculum/month-03-web-and-database-development/git-fundamentals/lesson.html"
+        },
+        {
+          "day": 87,
+          "title": "GitHub and collaboration",
+          "slug": "github-and-collaboration",
+          "markdown": "../curriculum/month-03-web-and-database-development/github-and-collaboration/README.md",
+          "html": "../curriculum/month-03-web-and-database-development/github-and-collaboration/lesson.html"
+        },
+        {
+          "day": 88,
+          "title": "Frontend mini project",
+          "slug": "frontend-mini-project",
+          "markdown": "../curriculum/month-03-web-and-database-development/frontend-mini-project/README.md",
+          "html": "../curriculum/month-03-web-and-database-development/frontend-mini-project/lesson.html"
+        },
+        {
+          "day": 89,
+          "title": "Frontend testing and debugging",
+          "slug": "frontend-testing-and-debugging",
+          "markdown": "../curriculum/month-03-web-and-database-development/frontend-testing-and-debugging/README.md",
+          "html": "../curriculum/month-03-web-and-database-development/frontend-testing-and-debugging/lesson.html"
+        },
+        {
+          "day": 90,
+          "title": "Month 3 assessment",
+          "slug": "month-3-assessment",
+          "markdown": "../curriculum/month-03-web-and-database-development/month-3-assessment/README.md",
+          "html": "../curriculum/month-03-web-and-database-development/month-3-assessment/lesson.html"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "slug": "month-04-django-full-stack",
+      "name": "Django Full Stack",
+      "focus": "Django MVT, URLs, views, templates, models, ORM, forms, authentication, and a complete web application.",
+      "lessons": [
+        {
+          "day": 91,
+          "title": "Django introduction and architecture",
+          "slug": "django-introduction-and-architecture",
+          "markdown": "../curriculum/month-04-django-full-stack/django-introduction-and-architecture/README.md",
+          "html": "../curriculum/month-04-django-full-stack/django-introduction-and-architecture/lesson.html"
+        },
+        {
+          "day": 92,
+          "title": "Installing Django",
+          "slug": "installing-django",
+          "markdown": "../curriculum/month-04-django-full-stack/installing-django/README.md",
+          "html": "../curriculum/month-04-django-full-stack/installing-django/lesson.html"
+        },
+        {
+          "day": 93,
+          "title": "Creating a Django project",
+          "slug": "creating-a-django-project",
+          "markdown": "../curriculum/month-04-django-full-stack/creating-a-django-project/README.md",
+          "html": "../curriculum/month-04-django-full-stack/creating-a-django-project/lesson.html"
+        },
+        {
+          "day": 94,
+          "title": "Django project structure",
+          "slug": "django-project-structure",
+          "markdown": "../curriculum/month-04-django-full-stack/django-project-structure/README.md",
+          "html": "../curriculum/month-04-django-full-stack/django-project-structure/lesson.html"
+        },
+        {
+          "day": 95,
+          "title": "Django apps",
+          "slug": "django-apps",
+          "markdown": "../curriculum/month-04-django-full-stack/django-apps/README.md",
+          "html": "../curriculum/month-04-django-full-stack/django-apps/lesson.html"
+        },
+        {
+          "day": 96,
+          "title": "URLs and routing",
+          "slug": "urls-and-routing",
+          "markdown": "../curriculum/month-04-django-full-stack/urls-and-routing/README.md",
+          "html": "../curriculum/month-04-django-full-stack/urls-and-routing/lesson.html"
+        },
+        {
+          "day": 97,
+          "title": "Views and request-response lifecycle",
+          "slug": "views-and-request-response-lifecycle",
+          "markdown": "../curriculum/month-04-django-full-stack/views-and-request-response-lifecycle/README.md",
+          "html": "../curriculum/month-04-django-full-stack/views-and-request-response-lifecycle/lesson.html"
+        },
+        {
+          "day": 98,
+          "title": "Templates",
+          "slug": "templates",
+          "markdown": "../curriculum/month-04-django-full-stack/templates/README.md",
+          "html": "../curriculum/month-04-django-full-stack/templates/lesson.html"
+        },
+        {
+          "day": 99,
+          "title": "Template inheritance",
+          "slug": "template-inheritance",
+          "markdown": "../curriculum/month-04-django-full-stack/template-inheritance/README.md",
+          "html": "../curriculum/month-04-django-full-stack/template-inheritance/lesson.html"
+        },
+        {
+          "day": 100,
+          "title": "Static files",
+          "slug": "static-files",
+          "markdown": "../curriculum/month-04-django-full-stack/static-files/README.md",
+          "html": "../curriculum/month-04-django-full-stack/static-files/lesson.html"
+        },
+        {
+          "day": 101,
+          "title": "Django models",
+          "slug": "django-models",
+          "markdown": "../curriculum/month-04-django-full-stack/django-models/README.md",
+          "html": "../curriculum/month-04-django-full-stack/django-models/lesson.html"
+        },
+        {
+          "day": 102,
+          "title": "Django ORM",
+          "slug": "django-orm",
+          "markdown": "../curriculum/month-04-django-full-stack/django-orm/README.md",
+          "html": "../curriculum/month-04-django-full-stack/django-orm/lesson.html"
+        },
+        {
+          "day": 103,
+          "title": "Migrations",
+          "slug": "migrations",
+          "markdown": "../curriculum/month-04-django-full-stack/migrations/README.md",
+          "html": "../curriculum/month-04-django-full-stack/migrations/lesson.html"
+        },
+        {
+          "day": 104,
+          "title": "QuerySets",
+          "slug": "querysets",
+          "markdown": "../curriculum/month-04-django-full-stack/querysets/README.md",
+          "html": "../curriculum/month-04-django-full-stack/querysets/lesson.html"
+        },
+        {
+          "day": 105,
+          "title": "CRUD operations",
+          "slug": "crud-operations",
+          "markdown": "../curriculum/month-04-django-full-stack/crud-operations/README.md",
+          "html": "../curriculum/month-04-django-full-stack/crud-operations/lesson.html"
+        },
+        {
+          "day": 106,
+          "title": "Django forms",
+          "slug": "django-forms",
+          "markdown": "../curriculum/month-04-django-full-stack/django-forms/README.md",
+          "html": "../curriculum/month-04-django-full-stack/django-forms/lesson.html"
+        },
+        {
+          "day": 107,
+          "title": "ModelForms",
+          "slug": "modelforms",
+          "markdown": "../curriculum/month-04-django-full-stack/modelforms/README.md",
+          "html": "../curriculum/month-04-django-full-stack/modelforms/lesson.html"
+        },
+        {
+          "day": 108,
+          "title": "Form validation",
+          "slug": "form-validation",
+          "markdown": "../curriculum/month-04-django-full-stack/form-validation/README.md",
+          "html": "../curriculum/month-04-django-full-stack/form-validation/lesson.html"
+        },
+        {
+          "day": 109,
+          "title": "Admin panel customization",
+          "slug": "admin-panel-customization",
+          "markdown": "../curriculum/month-04-django-full-stack/admin-panel-customization/README.md",
+          "html": "../curriculum/month-04-django-full-stack/admin-panel-customization/lesson.html"
+        },
+        {
+          "day": 110,
+          "title": "Authentication",
+          "slug": "authentication",
+          "markdown": "../curriculum/month-04-django-full-stack/authentication/README.md",
+          "html": "../curriculum/month-04-django-full-stack/authentication/lesson.html"
+        },
+        {
+          "day": 111,
+          "title": "Registration and login",
+          "slug": "registration-and-login",
+          "markdown": "../curriculum/month-04-django-full-stack/registration-and-login/README.md",
+          "html": "../curriculum/month-04-django-full-stack/registration-and-login/lesson.html"
+        },
+        {
+          "day": 112,
+          "title": "Logout and password management",
+          "slug": "logout-and-password-management",
+          "markdown": "../curriculum/month-04-django-full-stack/logout-and-password-management/README.md",
+          "html": "../curriculum/month-04-django-full-stack/logout-and-password-management/lesson.html"
+        },
+        {
+          "day": 113,
+          "title": "Permissions and authorization",
+          "slug": "permissions-and-authorization",
+          "markdown": "../curriculum/month-04-django-full-stack/permissions-and-authorization/README.md",
+          "html": "../curriculum/month-04-django-full-stack/permissions-and-authorization/lesson.html"
+        },
+        {
+          "day": 114,
+          "title": "Sessions and cookies",
+          "slug": "sessions-and-cookies",
+          "markdown": "../curriculum/month-04-django-full-stack/sessions-and-cookies/README.md",
+          "html": "../curriculum/month-04-django-full-stack/sessions-and-cookies/lesson.html"
+        },
+        {
+          "day": 115,
+          "title": "Middleware",
+          "slug": "middleware",
+          "markdown": "../curriculum/month-04-django-full-stack/middleware/README.md",
+          "html": "../curriculum/month-04-django-full-stack/middleware/lesson.html"
+        },
+        {
+          "day": 116,
+          "title": "Class-based views",
+          "slug": "class-based-views",
+          "markdown": "../curriculum/month-04-django-full-stack/class-based-views/README.md",
+          "html": "../curriculum/month-04-django-full-stack/class-based-views/lesson.html"
+        },
+        {
+          "day": 117,
+          "title": "Pagination and search",
+          "slug": "pagination-and-search",
+          "markdown": "../curriculum/month-04-django-full-stack/pagination-and-search/README.md",
+          "html": "../curriculum/month-04-django-full-stack/pagination-and-search/lesson.html"
+        },
+        {
+          "day": 118,
+          "title": "File and image uploads",
+          "slug": "file-and-image-uploads",
+          "markdown": "../curriculum/month-04-django-full-stack/file-and-image-uploads/README.md",
+          "html": "../curriculum/month-04-django-full-stack/file-and-image-uploads/lesson.html"
+        },
+        {
+          "day": 119,
+          "title": "Project: Blog Management System",
+          "slug": "project-blog-management-system",
+          "markdown": "../curriculum/month-04-django-full-stack/project-blog-management-system/README.md",
+          "html": "../curriculum/month-04-django-full-stack/project-blog-management-system/lesson.html"
+        },
+        {
+          "day": 120,
+          "title": "Month 4 assessment",
+          "slug": "month-4-assessment",
+          "markdown": "../curriculum/month-04-django-full-stack/month-4-assessment/README.md",
+          "html": "../curriculum/month-04-django-full-stack/month-4-assessment/lesson.html"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "slug": "month-05-drf-full-stack-and-ai",
+      "name": "Django REST Framework, React, and AI Workflows",
+      "focus": "REST APIs, DRF, authentication, PostgreSQL, React, document retrieval, and bounded tool-calling.",
+      "lessons": [
+        {
+          "day": 121,
+          "title": "REST API concepts",
+          "slug": "rest-api-concepts",
+          "markdown": "../curriculum/month-05-drf-full-stack-and-ai/rest-api-concepts/README.md",
+          "html": "../curriculum/month-05-drf-full-stack-and-ai/rest-api-concepts/lesson.html"
+        },
+        {
+          "day": 122,
+          "title": "Django REST Framework setup",
+          "slug": "django-rest-framework-setup",
+          "markdown": "../curriculum/month-05-drf-full-stack-and-ai/django-rest-framework-setup/README.md",
+          "html": "../curriculum/month-05-drf-full-stack-and-ai/django-rest-framework-setup/lesson.html"
+        },
+        {
+          "day": 123,
+          "title": "Serializers",
+          "slug": "serializers",
+          "markdown": "../curriculum/month-05-drf-full-stack-and-ai/serializers/README.md",
+          "html": "../curriculum/month-05-drf-full-stack-and-ai/serializers/lesson.html"
+        },
+        {
+          "day": 124,
+          "title": "Model serializers",
+          "slug": "model-serializers",
+          "markdown": "../curriculum/month-05-drf-full-stack-and-ai/model-serializers/README.md",
+          "html": "../curriculum/month-05-drf-full-stack-and-ai/model-serializers/lesson.html"
+        },
+        {
+          "day": 125,
+          "title": "API views",
+          "slug": "api-views",
+          "markdown": "../curriculum/month-05-drf-full-stack-and-ai/api-views/README.md",
+          "html": "../curriculum/month-05-drf-full-stack-and-ai/api-views/lesson.html"
+        },
+        {
+          "day": 126,
+          "title": "Generic views",
+          "slug": "generic-views",
+          "markdown": "../curriculum/month-05-drf-full-stack-and-ai/generic-views/README.md",
+          "html": "../curriculum/month-05-drf-full-stack-and-ai/generic-views/lesson.html"
+        },
+        {
+          "day": 127,
+          "title": "ViewSets and routers",
+          "slug": "viewsets-and-routers",
+          "markdown": "../curriculum/month-05-drf-full-stack-and-ai/viewsets-and-routers/README.md",
+          "html": "../curriculum/month-05-drf-full-stack-and-ai/viewsets-and-routers/lesson.html"
+        },
+        {
+          "day": 128,
+          "title": "API permissions",
+          "slug": "api-permissions",
+          "markdown": "../curriculum/month-05-drf-full-stack-and-ai/api-permissions/README.md",
+          "html": "../curriculum/month-05-drf-full-stack-and-ai/api-permissions/lesson.html"
+        },
+        {
+          "day": 129,
+          "title": "Authentication",
+          "slug": "authentication",
+          "markdown": "../curriculum/month-05-drf-full-stack-and-ai/authentication/README.md",
+          "html": "../curriculum/month-05-drf-full-stack-and-ai/authentication/lesson.html"
+        },
+        {
+          "day": 130,
+          "title": "JWT authentication",
+          "slug": "jwt-authentication",
+          "markdown": "../curriculum/month-05-drf-full-stack-and-ai/jwt-authentication/README.md",
+          "html": "../curriculum/month-05-drf-full-stack-and-ai/jwt-authentication/lesson.html"
+        },
+        {
+          "day": 131,
+          "title": "API pagination",
+          "slug": "api-pagination",
+          "markdown": "../curriculum/month-05-drf-full-stack-and-ai/api-pagination/README.md",
+          "html": "../curriculum/month-05-drf-full-stack-and-ai/api-pagination/lesson.html"
+        },
+        {
+          "day": 132,
+          "title": "Filtering and searching",
+          "slug": "filtering-and-searching",
+          "markdown": "../curriculum/month-05-drf-full-stack-and-ai/filtering-and-searching/README.md",
+          "html": "../curriculum/month-05-drf-full-stack-and-ai/filtering-and-searching/lesson.html"
+        },
+        {
+          "day": 133,
+          "title": "Ordering",
+          "slug": "ordering",
+          "markdown": "../curriculum/month-05-drf-full-stack-and-ai/ordering/README.md",
+          "html": "../curriculum/month-05-drf-full-stack-and-ai/ordering/lesson.html"
+        },
+        {
+          "day": 134,
+          "title": "API validation",
+          "slug": "api-validation",
+          "markdown": "../curriculum/month-05-drf-full-stack-and-ai/api-validation/README.md",
+          "html": "../curriculum/month-05-drf-full-stack-and-ai/api-validation/lesson.html"
+        },
+        {
+          "day": 135,
+          "title": "API error handling",
+          "slug": "api-error-handling",
+          "markdown": "../curriculum/month-05-drf-full-stack-and-ai/api-error-handling/README.md",
+          "html": "../curriculum/month-05-drf-full-stack-and-ai/api-error-handling/lesson.html"
+        },
+        {
+          "day": 136,
+          "title": "CORS and security",
+          "slug": "cors-and-security",
+          "markdown": "../curriculum/month-05-drf-full-stack-and-ai/cors-and-security/README.md",
+          "html": "../curriculum/month-05-drf-full-stack-and-ai/cors-and-security/lesson.html"
+        },
+        {
+          "day": 137,
+          "title": "API documentation",
+          "slug": "api-documentation",
+          "markdown": "../curriculum/month-05-drf-full-stack-and-ai/api-documentation/README.md",
+          "html": "../curriculum/month-05-drf-full-stack-and-ai/api-documentation/lesson.html"
+        },
+        {
+          "day": 138,
+          "title": "Postman testing",
+          "slug": "postman-testing",
+          "markdown": "../curriculum/month-05-drf-full-stack-and-ai/postman-testing/README.md",
+          "html": "../curriculum/month-05-drf-full-stack-and-ai/postman-testing/lesson.html"
+        },
+        {
+          "day": 139,
+          "title": "PostgreSQL integration",
+          "slug": "postgresql-integration",
+          "markdown": "../curriculum/month-05-drf-full-stack-and-ai/postgresql-integration/README.md",
+          "html": "../curriculum/month-05-drf-full-stack-and-ai/postgresql-integration/lesson.html"
+        },
+        {
+          "day": 140,
+          "title": "Database relationships",
+          "slug": "database-relationships",
+          "markdown": "../curriculum/month-05-drf-full-stack-and-ai/database-relationships/README.md",
+          "html": "../curriculum/month-05-drf-full-stack-and-ai/database-relationships/lesson.html"
+        },
+        {
+          "day": 141,
+          "title": "Advanced Django ORM",
+          "slug": "advanced-django-orm",
+          "markdown": "../curriculum/month-05-drf-full-stack-and-ai/advanced-django-orm/README.md",
+          "html": "../curriculum/month-05-drf-full-stack-and-ai/advanced-django-orm/lesson.html"
+        },
+        {
+          "day": 142,
+          "title": "React fundamentals",
+          "slug": "react-fundamentals",
+          "markdown": "../curriculum/month-05-drf-full-stack-and-ai/react-fundamentals/README.md",
+          "html": "../curriculum/month-05-drf-full-stack-and-ai/react-fundamentals/lesson.html"
+        },
+        {
+          "day": 143,
+          "title": "React components",
+          "slug": "react-components",
+          "markdown": "../curriculum/month-05-drf-full-stack-and-ai/react-components/README.md",
+          "html": "../curriculum/month-05-drf-full-stack-and-ai/react-components/lesson.html"
+        },
+        {
+          "day": 144,
+          "title": "Props and state",
+          "slug": "props-and-state",
+          "markdown": "../curriculum/month-05-drf-full-stack-and-ai/props-and-state/README.md",
+          "html": "../curriculum/month-05-drf-full-stack-and-ai/props-and-state/lesson.html"
+        },
+        {
+          "day": 145,
+          "title": "React hooks",
+          "slug": "react-hooks",
+          "markdown": "../curriculum/month-05-drf-full-stack-and-ai/react-hooks/README.md",
+          "html": "../curriculum/month-05-drf-full-stack-and-ai/react-hooks/lesson.html"
+        },
+        {
+          "day": 146,
+          "title": "React forms",
+          "slug": "react-forms",
+          "markdown": "../curriculum/month-05-drf-full-stack-and-ai/react-forms/README.md",
+          "html": "../curriculum/month-05-drf-full-stack-and-ai/react-forms/lesson.html"
+        },
+        {
+          "day": 147,
+          "title": "React and Django integration",
+          "slug": "react-and-django-integration",
+          "markdown": "../curriculum/month-05-drf-full-stack-and-ai/react-and-django-integration/README.md",
+          "html": "../curriculum/month-05-drf-full-stack-and-ai/react-and-django-integration/lesson.html"
+        },
+        {
+          "day": 148,
+          "title": "Full stack authentication",
+          "slug": "full-stack-authentication",
+          "markdown": "../curriculum/month-05-drf-full-stack-and-ai/full-stack-authentication/README.md",
+          "html": "../curriculum/month-05-drf-full-stack-and-ai/full-stack-authentication/lesson.html"
+        },
+        {
+          "day": 149,
+          "title": "Full stack project",
+          "slug": "full-stack-project",
+          "markdown": "../curriculum/month-05-drf-full-stack-and-ai/full-stack-project/README.md",
+          "html": "../curriculum/month-05-drf-full-stack-and-ai/full-stack-project/lesson.html"
+        },
+        {
+          "day": 150,
+          "title": "Month 5 assessment",
+          "slug": "month-5-assessment",
+          "markdown": "../curriculum/month-05-drf-full-stack-and-ai/month-5-assessment/README.md",
+          "html": "../curriculum/month-05-drf-full-stack-and-ai/month-5-assessment/lesson.html"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "slug": "month-06-production-deployment-and-job-readiness",
+      "name": "Production, Deployment, and Job Readiness",
+      "focus": "Security, performance, tests, containers, CI/CD, deployment, observability, AI evaluation, and portfolio readiness.",
+      "lessons": [
+        {
+          "day": 151,
+          "title": "Advanced Django architecture",
+          "slug": "advanced-django-architecture",
+          "markdown": "../curriculum/month-06-production-deployment-and-job-readiness/advanced-django-architecture/README.md",
+          "html": "../curriculum/month-06-production-deployment-and-job-readiness/advanced-django-architecture/lesson.html"
+        },
+        {
+          "day": 152,
+          "title": "Django signals",
+          "slug": "django-signals",
+          "markdown": "../curriculum/month-06-production-deployment-and-job-readiness/django-signals/README.md",
+          "html": "../curriculum/month-06-production-deployment-and-job-readiness/django-signals/lesson.html"
+        },
+        {
+          "day": 153,
+          "title": "Custom middleware",
+          "slug": "custom-middleware",
+          "markdown": "../curriculum/month-06-production-deployment-and-job-readiness/custom-middleware/README.md",
+          "html": "../curriculum/month-06-production-deployment-and-job-readiness/custom-middleware/lesson.html"
+        },
+        {
+          "day": 154,
+          "title": "Caching fundamentals",
+          "slug": "caching-fundamentals",
+          "markdown": "../curriculum/month-06-production-deployment-and-job-readiness/caching-fundamentals/README.md",
+          "html": "../curriculum/month-06-production-deployment-and-job-readiness/caching-fundamentals/lesson.html"
+        },
+        {
+          "day": 155,
+          "title": "Redis integration",
+          "slug": "redis-integration",
+          "markdown": "../curriculum/month-06-production-deployment-and-job-readiness/redis-integration/README.md",
+          "html": "../curriculum/month-06-production-deployment-and-job-readiness/redis-integration/lesson.html"
+        },
+        {
+          "day": 156,
+          "title": "Celery background tasks",
+          "slug": "celery-background-tasks",
+          "markdown": "../curriculum/month-06-production-deployment-and-job-readiness/celery-background-tasks/README.md",
+          "html": "../curriculum/month-06-production-deployment-and-job-readiness/celery-background-tasks/lesson.html"
+        },
+        {
+          "day": 157,
+          "title": "Email notifications",
+          "slug": "email-notifications",
+          "markdown": "../curriculum/month-06-production-deployment-and-job-readiness/email-notifications/README.md",
+          "html": "../curriculum/month-06-production-deployment-and-job-readiness/email-notifications/lesson.html"
+        },
+        {
+          "day": 158,
+          "title": "Django Channels and WebSockets",
+          "slug": "django-channels-and-websockets",
+          "markdown": "../curriculum/month-06-production-deployment-and-job-readiness/django-channels-and-websockets/README.md",
+          "html": "../curriculum/month-06-production-deployment-and-job-readiness/django-channels-and-websockets/lesson.html"
+        },
+        {
+          "day": 159,
+          "title": "Async views fundamentals",
+          "slug": "async-views-fundamentals",
+          "markdown": "../curriculum/month-06-production-deployment-and-job-readiness/async-views-fundamentals/README.md",
+          "html": "../curriculum/month-06-production-deployment-and-job-readiness/async-views-fundamentals/lesson.html"
+        },
+        {
+          "day": 160,
+          "title": "Application security",
+          "slug": "application-security",
+          "markdown": "../curriculum/month-06-production-deployment-and-job-readiness/application-security/README.md",
+          "html": "../curriculum/month-06-production-deployment-and-job-readiness/application-security/lesson.html"
+        },
+        {
+          "day": 161,
+          "title": "SQL injection and XSS prevention",
+          "slug": "sql-injection-and-xss-prevention",
+          "markdown": "../curriculum/month-06-production-deployment-and-job-readiness/sql-injection-and-xss-prevention/README.md",
+          "html": "../curriculum/month-06-production-deployment-and-job-readiness/sql-injection-and-xss-prevention/lesson.html"
+        },
+        {
+          "day": 162,
+          "title": "CSRF and authentication security",
+          "slug": "csrf-and-authentication-security",
+          "markdown": "../curriculum/month-06-production-deployment-and-job-readiness/csrf-and-authentication-security/README.md",
+          "html": "../curriculum/month-06-production-deployment-and-job-readiness/csrf-and-authentication-security/lesson.html"
+        },
+        {
+          "day": 163,
+          "title": "Performance optimization",
+          "slug": "performance-optimization",
+          "markdown": "../curriculum/month-06-production-deployment-and-job-readiness/performance-optimization/README.md",
+          "html": "../curriculum/month-06-production-deployment-and-job-readiness/performance-optimization/lesson.html"
+        },
+        {
+          "day": 164,
+          "title": "Database indexing",
+          "slug": "database-indexing",
+          "markdown": "../curriculum/month-06-production-deployment-and-job-readiness/database-indexing/README.md",
+          "html": "../curriculum/month-06-production-deployment-and-job-readiness/database-indexing/lesson.html"
+        },
+        {
+          "day": 165,
+          "title": "Testing Django applications",
+          "slug": "testing-django-applications",
+          "markdown": "../curriculum/month-06-production-deployment-and-job-readiness/testing-django-applications/README.md",
+          "html": "../curriculum/month-06-production-deployment-and-job-readiness/testing-django-applications/lesson.html"
+        },
+        {
+          "day": 166,
+          "title": "Integration testing",
+          "slug": "integration-testing",
+          "markdown": "../curriculum/month-06-production-deployment-and-job-readiness/integration-testing/README.md",
+          "html": "../curriculum/month-06-production-deployment-and-job-readiness/integration-testing/lesson.html"
+        },
+        {
+          "day": 167,
+          "title": "Docker fundamentals",
+          "slug": "docker-fundamentals",
+          "markdown": "../curriculum/month-06-production-deployment-and-job-readiness/docker-fundamentals/README.md",
+          "html": "../curriculum/month-06-production-deployment-and-job-readiness/docker-fundamentals/lesson.html"
+        },
+        {
+          "day": 168,
+          "title": "Dockerize Django application",
+          "slug": "dockerize-django-application",
+          "markdown": "../curriculum/month-06-production-deployment-and-job-readiness/dockerize-django-application/README.md",
+          "html": "../curriculum/month-06-production-deployment-and-job-readiness/dockerize-django-application/lesson.html"
+        },
+        {
+          "day": 169,
+          "title": "Docker Compose and PostgreSQL",
+          "slug": "docker-compose-and-postgresql",
+          "markdown": "../curriculum/month-06-production-deployment-and-job-readiness/docker-compose-and-postgresql/README.md",
+          "html": "../curriculum/month-06-production-deployment-and-job-readiness/docker-compose-and-postgresql/lesson.html"
+        },
+        {
+          "day": 170,
+          "title": "Production settings",
+          "slug": "production-settings",
+          "markdown": "../curriculum/month-06-production-deployment-and-job-readiness/production-settings/README.md",
+          "html": "../curriculum/month-06-production-deployment-and-job-readiness/production-settings/lesson.html"
+        },
+        {
+          "day": 171,
+          "title": "Gunicorn and Nginx",
+          "slug": "gunicorn-and-nginx",
+          "markdown": "../curriculum/month-06-production-deployment-and-job-readiness/gunicorn-and-nginx/README.md",
+          "html": "../curriculum/month-06-production-deployment-and-job-readiness/gunicorn-and-nginx/lesson.html"
+        },
+        {
+          "day": 172,
+          "title": "GitHub Actions CI/CD",
+          "slug": "github-actions-ci-cd",
+          "markdown": "../curriculum/month-06-production-deployment-and-job-readiness/github-actions-ci-cd/README.md",
+          "html": "../curriculum/month-06-production-deployment-and-job-readiness/github-actions-ci-cd/lesson.html"
+        },
+        {
+          "day": 173,
+          "title": "Cloud deployment",
+          "slug": "cloud-deployment",
+          "markdown": "../curriculum/month-06-production-deployment-and-job-readiness/cloud-deployment/README.md",
+          "html": "../curriculum/month-06-production-deployment-and-job-readiness/cloud-deployment/lesson.html"
+        },
+        {
+          "day": 174,
+          "title": "AWS deployment fundamentals",
+          "slug": "aws-deployment-fundamentals",
+          "markdown": "../curriculum/month-06-production-deployment-and-job-readiness/aws-deployment-fundamentals/README.md",
+          "html": "../curriculum/month-06-production-deployment-and-job-readiness/aws-deployment-fundamentals/lesson.html"
+        },
+        {
+          "day": 175,
+          "title": "Logging and monitoring",
+          "slug": "logging-and-monitoring",
+          "markdown": "../curriculum/month-06-production-deployment-and-job-readiness/logging-and-monitoring/README.md",
+          "html": "../curriculum/month-06-production-deployment-and-job-readiness/logging-and-monitoring/lesson.html"
+        },
+        {
+          "day": 176,
+          "title": "Capstone project development",
+          "slug": "capstone-project-development",
+          "markdown": "../curriculum/month-06-production-deployment-and-job-readiness/capstone-project-development/README.md",
+          "html": "../curriculum/month-06-production-deployment-and-job-readiness/capstone-project-development/lesson.html"
+        },
+        {
+          "day": 177,
+          "title": "Capstone testing and documentation",
+          "slug": "capstone-testing-and-documentation",
+          "markdown": "../curriculum/month-06-production-deployment-and-job-readiness/capstone-testing-and-documentation/README.md",
+          "html": "../curriculum/month-06-production-deployment-and-job-readiness/capstone-testing-and-documentation/lesson.html"
+        },
+        {
+          "day": 178,
+          "title": "Resume and GitHub portfolio",
+          "slug": "resume-and-github-portfolio",
+          "markdown": "../curriculum/month-06-production-deployment-and-job-readiness/resume-and-github-portfolio/README.md",
+          "html": "../curriculum/month-06-production-deployment-and-job-readiness/resume-and-github-portfolio/lesson.html"
+        },
+        {
+          "day": 179,
+          "title": "Python and Django interview preparation",
+          "slug": "python-and-django-interview-preparation",
+          "markdown": "../curriculum/month-06-production-deployment-and-job-readiness/python-and-django-interview-preparation/README.md",
+          "html": "../curriculum/month-06-production-deployment-and-job-readiness/python-and-django-interview-preparation/lesson.html"
+        },
+        {
+          "day": 180,
+          "title": "Final assessment and job-readiness evaluation",
+          "slug": "final-assessment-and-job-readiness-evaluation",
+          "markdown": "../curriculum/month-06-production-deployment-and-job-readiness/final-assessment-and-job-readiness-evaluation/README.md",
+          "html": "../curriculum/month-06-production-deployment-and-job-readiness/final-assessment-and-job-readiness-evaluation/lesson.html"
+        }
+      ]
+    }
+  ]
+}

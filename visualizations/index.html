@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interactive, safe simulations for Python, Django, retrieval, agents, and software delivery.">
+  <title>Interactive Deep-Dive Labs | Python Full Stack + AI Academy</title>
+  <link rel="stylesheet" href="../frontend/css/style.css">
+</head>
+<body>
+  <main class="dashboard visual-lab-page">
+    <p><a href="../frontend/index.html">Back to course dashboard</a></p>
+    <p><a href="../consoles/index.html">Open the safe DevOps Console Studio →</a></p>
+    <header class="dashboard-hero" id="deep-dive-labs">
+      <p class="eyebrow">INTERACTIVE DEEP-DIVE LABS</p>
+      <h1>See it. Change it. Explain it.</h1>
+      <p>Explore how values move, requests cross trust boundaries, retrieval selects evidence, agents meet policy, and releases recover from failure. These local simulations use sample data only; they never call a provider or change a real system.</p>
+      <div class="lab-outcomes" aria-label="Learning loop">
+        <span>1 · Predict</span><span>2 · Experiment</span><span>3 · Inspect</span><span>4 · Explain</span>
+      </div>
+    </header>
+
+    <nav class="lab-filter panel" aria-label="Filter visualization labs">
+      <span class="filter-label">Explore by pathway</span>
+      <button type="button" class="secondary" data-filter="all" aria-pressed="true">All labs</button>
+      <button type="button" class="secondary" data-filter="python" aria-pressed="false">Python</button>
+      <button type="button" class="secondary" data-filter="web" aria-pressed="false">Web and Django</button>
+      <button type="button" class="secondary" data-filter="ai" aria-pressed="false">AI systems</button>
+      <button type="button" class="secondary" data-filter="delivery" aria-pressed="false">Delivery</button>
+      <button type="button" class="secondary" data-filter="docker" aria-pressed="false">Docker</button>
+      <button type="button" class="secondary" data-filter="aws" aria-pressed="false">AWS</button>
+      <button type="button" class="secondary" data-filter="terraform" aria-pressed="false">Terraform</button>
+      <button type="button" class="secondary" data-filter="ansible" aria-pressed="false">Ansible</button>
+      <button type="button" class="secondary" data-filter="git" aria-pressed="false">Git</button>
+      <button type="button" class="secondary" data-filter="kubernetes" aria-pressed="false">Kubernetes</button>
+      <button type="button" class="secondary" data-filter="devops" aria-pressed="false">All infrastructure</button>
+    </nav>
+
+    <section class="lesson-visual deep-lab" data-lab="python" id="python-state-lab" aria-labelledby="python-lab-title">
+      <header class="lab-heading">
+        <p class="lab-kicker">LAB 01 · PYTHON FUNDAMENTALS</p>
+        <h2 id="python-lab-title">Trace a loop like a debugger</h2>
+        <p>Predict how the accumulator changes. Then step through one input at a time and compare your prediction with the state table.</p>
+      </header>
+      <div class="lab-controls">
+        <label for="loop-values">Numbers, comma-separated
+          <input id="loop-values" type="text" value="72, 88, 91" inputmode="decimal" aria-describedby="loop-help">
+        </label>
+        <label for="loop-operation">What should the loop calculate?
+          <select id="loop-operation">
+            <option value="sum">Sum</option>
+            <option value="average">Average</option>
+            <option value="maximum">Maximum</option>
+          </select>
+        </label>
+        <button type="button" data-loop-action="start">Load input</button>
+        <button type="button" class="secondary" data-loop-action="next" disabled>Process next value</button>
+        <button type="button" class="secondary" data-loop-action="reset">Reset</button>
+      </div>
+      <p id="loop-help" class="small-print">Use 1–12 finite numbers. This local trace models a basic loop; it does not run submitted code.</p>
+      <p class="lab-feedback" data-loop-status aria-live="polite">Load the input to begin.</p>
+      <div class="diagram-flow" aria-label="Loop data flow">
+        <div class="diagram-node" data-loop-node="input"><span class="node-number">01</span><strong>Input</strong><span>Values arrive</span></div>
+        <span class="flow-arrow" aria-hidden="true">→</span>
+        <div class="diagram-node" data-loop-node="read"><span class="node-number">02</span><strong>Read</strong><span>Take one value</span></div>
+        <span class="flow-arrow" aria-hidden="true">→</span>
+        <div class="diagram-node" data-loop-node="update"><span class="node-number">03</span><strong>Update</strong><span>Change state</span></div>
+        <span class="flow-arrow" aria-hidden="true">→</span>
+        <div class="diagram-node" data-loop-node="output"><span class="node-number">04</span><strong>Output</strong><span>Report result</span></div>
+      </div>
+      <div class="state-grid" aria-live="polite">
+        <article class="state-card"><span>Loop index</span><strong id="loop-index">—</strong></article>
+        <article class="state-card"><span>Current value</span><strong id="loop-current">—</strong></article>
+        <article class="state-card"><span>Accumulator</span><strong id="loop-accumulator">—</strong></article>
+        <article class="state-card"><span>Final result</span><strong id="loop-result">—</strong></article>
+      </div>
+      <div class="trace-table-wrap">
+        <table class="trace-table">
+          <caption>State after each iteration</caption>
+          <thead><tr><th scope="col">Iteration</th><th scope="col">Value</th><th scope="col">State after update</th></tr></thead>
+          <tbody id="loop-trace"><tr><td colspan="3">Load a valid input to create a trace.</td></tr></tbody>
+        </table>
+      </div>
+      <details class="deep-dive">
+        <summary>Deep dive: what invariant should stay true?</summary>
+        <p>For sum, after processing the first <var>k</var> values, the accumulator equals the sum of exactly those <var>k</var> values. For maximum, it equals the largest value seen so far. State the invariant before the loop; check it after every iteration. Average needs both a running sum and a count, and the empty-input case needs an explicit policy.</p>
+      </details>
+      <p class="lab-challenge"><strong>Try:</strong> Predict the final average for <code>1, 2, 6</code>. Step through it and explain why the loop index and processed-value count differ by one.</p>
+    </section>
+
+    <section class="lesson-visual deep-lab" data-lab="web" id="request-pipeline-lab" aria-labelledby="request-lab-title">
+      <header class="lab-heading">
+        <p class="lab-kicker">LAB 02 · HTTP AND DJANGO</p>
+        <h2 id="request-lab-title">Follow one request across trust boundaries</h2>
+        <p>Choose a request scenario and advance through the simplified path. Notice where authentication, authorization, and validation are checked.</p>
+      </header>
+      <div class="lab-controls">
+        <label for="request-scenario">Request scenario
+          <select id="request-scenario">
+            <option value="success">Signed in · owns the record · valid input</option>
+            <option value="anonymous">No authenticated session</option>
+            <option value="forbidden">Signed in · does not own the record</option>
+            <option value="invalid">Signed in · malformed input</option>
+            <option value="missing">The requested record does not exist</option>
+          </select>
+        </label>
+        <button type="button" data-request-action="start">Start request</button>
+        <button type="button" class="secondary" data-request-action="next" disabled>Next boundary</button>
+        <button type="button" class="secondary" data-request-action="reset">Reset</button>
+      </div>
+      <p class="lab-feedback" data-request-status aria-live="polite">Choose a scenario, then start the request.</p>
+      <div class="diagram-flow request-flow" aria-label="Request pipeline">
+        <div class="diagram-node" data-request-node="browser"><span class="node-number">01</span><strong>Browser</strong><span>Untrusted request</span></div>
+        <span class="flow-arrow" aria-hidden="true">→</span>
+        <div class="diagram-node" data-request-node="route"><span class="node-number">02</span><strong>URL + middleware</strong><span>Route and session</span></div>
+        <span class="flow-arrow" aria-hidden="true">→</span>
+        <div class="diagram-node" data-request-node="view"><span class="node-number">03</span><strong>View + policy</strong><span>Authorize and validate</span></div>
+        <span class="flow-arrow" aria-hidden="true">→</span>
+        <div class="diagram-node" data-request-node="data"><span class="node-number">04</span><strong>Database</strong><span>Scoped lookup</span></div>
+        <span class="flow-arrow" aria-hidden="true">→</span>
+        <div class="diagram-node" data-request-node="response"><span class="node-number">05</span><strong>Response</strong><span>Return safe result</span></div>
+      </div>
+      <div class="request-outcome" aria-live="polite"><strong id="request-code">—</strong><span id="request-explanation">No request has been simulated.</span></div>
+      <details class="deep-dive">
+        <summary>Deep dive: authentication is not authorization</summary>
+        <p>Authentication answers “who is making this request?” Authorization answers “may this identity perform this action on this specific object?” A signed-in user still needs an object-level permission check. Validate request data separately, and do not trust a client-supplied owner ID.</p>
+      </details>
+      <p class="lab-challenge"><strong>Try:</strong> Compare the anonymous and forbidden scenarios. Explain why a real application might intentionally choose different or uniform error responses.</p>
+    </section>
+
+    <section class="lesson-visual deep-lab" data-lab="ai" id="rag-retrieval-lab" aria-labelledby="rag-lab-title">
+      <header class="lab-heading">
+        <p class="lab-kicker">LAB 03 · RETRIEVAL-AUGMENTED GENERATION</p>
+        <h2 id="rag-lab-title">Inspect retrieval before generation</h2>
+        <p>Change the query or access group. The toy retriever ranks sample passages by keyword overlap after applying access scope.</p>
+      </header>
+      <div class="lab-controls">
+        <label for="rag-query">Question
+          <input id="rag-query" type="search" value="How do container images support deployment?" maxlength="160" autocomplete="off">
+        </label>
+        <label for="rag-role">Signed-in learner
+          <select id="rag-role"><option value="learner">Learner</option><option value="staff">Staff</option></select>
+        </label>
+        <label for="rag-top-k">Passages to retrieve: <output id="rag-top-k-value">3</output>
+          <input id="rag-top-k" type="range" min="1" max="5" value="3">
+        </label>
+        <button type="button" data-rag-action="retrieve">Retrieve passages</button>
+      </div>
+      <p class="lab-feedback" data-rag-status aria-live="polite">Ready to search the local sample library.</p>
+      <div class="retrieval-diagram" aria-label="Retrieval pipeline">
+        <div class="diagram-node is-complete"><span class="node-number">01</span><strong>Identity</strong><span>Current role</span></div>
+        <span class="flow-arrow" aria-hidden="true">→</span>
+        <div class="diagram-node is-complete"><span class="node-number">02</span><strong>Scope</strong><span>Allowed sources only</span></div>
+        <span class="flow-arrow" aria-hidden="true">→</span>
+        <div class="diagram-node is-complete"><span class="node-number">03</span><strong>Rank</strong><span>Toy keyword overlap</span></div>
+        <span class="flow-arrow" aria-hidden="true">→</span>
+        <div class="diagram-node"><span class="node-number">04</span><strong>Evidence</strong><span>Source-linked passages</span></div>
+      </div>
+      <div class="retrieval-results" id="rag-results" aria-live="polite"><p class="empty-state">Retrieve to see ranked passages. Restricted documents are filtered before ranking.</p></div>
+      <details class="deep-dive">
+        <summary>Deep dive: retrieval quality, access, and grounding</summary>
+        <p>This demonstration uses transparent keyword overlap—not embeddings or a production vector database. Real systems also need document parsing, chunking, metadata filters, tenant and user permissions, retrieval evaluation, and freshness controls. Authorization must be applied before passages are placed in model context. A citation proves which source was retrieved, not that a generated claim is correct.</p>
+      </details>
+      <p class="lab-challenge"><strong>Try:</strong> Search for “account billing” as a learner and as staff. Notice whether the restricted passage appears, then explain why hiding it after generation would be too late.</p>
+    </section>
+
+    <section class="lesson-visual deep-lab" data-lab="ai" id="agent-policy-lab" aria-labelledby="agent-lab-title">
+      <header class="lab-heading">
+        <p class="lab-kicker">LAB 04 · BOUNDED AGENTS</p>
+        <h2 id="agent-lab-title">Make tool policy visible</h2>
+        <p>Simulate a tool request against an allowlist, a step budget, and a human-approval gate. Nothing is sent, deleted, or changed.</p>
+      </header>
+      <div class="lab-controls">
+        <label for="agent-tool">Requested tool
+          <select id="agent-tool">
+            <option value="search">search_course · read-only</option>
+            <option value="email">send_email · external side effect</option>
+            <option value="delete">delete_record · not allow-listed</option>
+          </select>
+        </label>
+        <label for="agent-budget">Step budget: <output id="agent-budget-value">3</output>
+          <input id="agent-budget" type="range" min="1" max="5" value="3">
+        </label>
+        <label class="inline-check" for="agent-approval"><input id="agent-approval" type="checkbox"> Human explicitly approved the simulated email</label>
+        <button type="button" data-agent-action="check">Evaluate policy</button>
+      </div>
+      <p class="lab-feedback" data-agent-status aria-live="polite">No tool request has been evaluated.</p>
+      <div class="policy-grid" aria-live="polite">
+        <article class="policy-check" data-policy-check="allowlist"><span>1</span><strong>Allowlist</strong><em>Not checked</em></article>
+        <article class="policy-check" data-policy-check="budget"><span>2</span><strong>Step budget</strong><em>Not checked</em></article>
+        <article class="policy-check" data-policy-check="approval"><span>3</span><strong>Human approval</strong><em>Not checked</em></article>
+        <article class="policy-check" data-policy-check="result"><span>4</span><strong>Decision</strong><em>Not checked</em></article>
+      </div>
+      <p class="small-print">Even an approved simulation never invokes a real tool. Production authorization belongs in trusted server code, not in a model prompt or browser checkbox.</p>
+      <details class="deep-dive">
+        <summary>Deep dive: constrain authority, not just language</summary>
+        <p>Prompts can guide behavior but cannot enforce access control. The server must validate the user, tool name, arguments, resource ownership, budget, and approval for every call. Treat retrieved documents and model output as untrusted; cap retries and execution time; make repeated requests safe where possible; and log minimal, non-sensitive decision metadata.</p>
+      </details>
+      <p class="lab-challenge"><strong>Try:</strong> Request each tool with budget 1, then budget 3. Turn approval on for the email and explain which checks change—and why the delete tool remains denied.</p>
+    </section>
+
+    <section class="lesson-visual deep-lab" data-lab="delivery" id="delivery-lab" aria-labelledby="delivery-lab-title">
+      <header class="lab-heading">
+        <p class="lab-kicker">LAB 05 · CI/CD AND OPERATIONS</p>
+        <h2 id="delivery-lab-title">Watch a release stop, promote, or roll back</h2>
+        <p>Choose test and canary outcomes. Advance through the release gates and observe why a failed change should not be promoted.</p>
+      </header>
+      <div class="lab-controls">
+        <label for="release-tests">Automated tests
+          <select id="release-tests"><option value="pass">Pass</option><option value="fail">Fail</option></select>
+        </label>
+        <label for="release-health">Canary health
+          <select id="release-health"><option value="healthy">Healthy</option><option value="unhealthy">Unhealthy</option></select>
+        </label>
+        <button type="button" data-release-action="start">Start release</button>
+        <button type="button" class="secondary" data-release-action="next" disabled>Advance gate</button>
+        <button type="button" class="secondary" data-release-action="reset">Reset</button>
+      </div>
+      <p class="lab-feedback" data-release-status aria-live="polite">Choose outcomes to simulate a release.</p>
+      <ol class="release-pipeline">
+        <li data-release-node="commit"><span>01</span><strong>Commit</strong><small>Versioned change</small></li>
+        <li data-release-node="build"><span>02</span><strong>Build</strong><small>Reproducible artifact</small></li>
+        <li data-release-node="tests"><span>03</span><strong>Test</strong><small>Automated checks</small></li>
+        <li data-release-node="approval"><span>04</span><strong>Approve</strong><small>Release gate</small></li>
+        <li data-release-node="canary"><span>05</span><strong>Canary</strong><small>Small exposure</small></li>
+        <li data-release-node="health"><span>06</span><strong>Observe</strong><small>Health signals</small></li>
+        <li data-release-node="outcome"><span>07</span><strong>Promote / rollback</strong><small>Recover safely</small></li>
+      </ol>
+      <div class="release-metrics" aria-live="polite">
+        <article class="state-card"><span>Current gate</span><strong id="release-gate">—</strong></article>
+        <article class="state-card"><span>Exposure</span><strong id="release-exposure">0%</strong></article>
+        <article class="state-card"><span>Decision</span><strong id="release-outcome">Not started</strong></article>
+      </div>
+      <details class="deep-dive">
+        <summary>Deep dive: a pipeline is a risk-control system</summary>
+        <p>Automated tests reduce known failure modes but do not prove a release is safe. Staged exposure and health checks provide new evidence after deployment. Define measurable rollback signals in advance, keep the previous version recoverable, and verify that the rollback path itself works. Never treat “build succeeded” as “users are healthy.”</p>
+      </details>
+      <p class="lab-challenge"><strong>Try:</strong> Simulate a failing test, then a passing test with unhealthy canary signals. Describe where exposure begins and why the pipeline stops or rolls back.</p>
+    </section>
+
+    <section class="lesson-visual deep-lab" data-lab="devops" data-topic="docker" id="docker-lab" aria-labelledby="docker-lab-title">
+      <header class="lab-heading">
+        <p class="lab-kicker">LAB 06 · DOCKER IMAGE LAYERS</p>
+        <h2 id="docker-lab-title">See the build cache invalidate</h2>
+        <p>Keep instruction order fixed and change one input. Observe which later layers must rebuild and distinguish an image from a running container.</p>
+      </header>
+      <div class="lab-controls">
+        <label for="docker-change">What changed?
+          <select id="docker-change">
+            <option value="source">Application source files</option>
+            <option value="dependencies">Dependency lock file</option>
+            <option value="base">Base image</option>
+            <option value="none">Nothing changed</option>
+          </select>
+        </label>
+        <button type="button" data-docker-action="build">Simulate image build</button>
+        <button type="button" class="secondary" data-docker-action="run" disabled>Create sample container</button>
+        <button type="button" class="secondary" data-docker-action="reset">Reset</button>
+      </div>
+      <p class="lab-feedback" data-docker-status aria-live="polite">Choose a change and simulate the build.</p>
+      <ol class="layer-stack" aria-label="Ordered image build layers">
+        <li data-docker-layer="0"><span>01</span><strong>FROM python:slim</strong><em>Base image</em></li>
+        <li data-docker-layer="1"><span>02</span><strong>Install OS packages</strong><em>System dependencies</em></li>
+        <li data-docker-layer="2"><span>03</span><strong>Install locked Python dependencies</strong><em>Dependency layer</em></li>
+        <li data-docker-layer="3"><span>04</span><strong>COPY application source</strong><em>Application layer</em></li>
+        <li data-docker-layer="4"><span>05</span><strong>Set command and runtime user</strong><em>Image configuration</em></li>
+      </ol>
+      <div class="state-grid">
+        <article class="state-card"><span>Image</span><strong id="docker-image">Not built</strong></article>
+        <article class="state-card"><span>Container</span><strong id="docker-container">Not created</strong></article>
+        <article class="state-card"><span>Layers reused</span><strong id="docker-cached">—</strong></article>
+      </div>
+      <details class="deep-dive">
+        <summary>Deep dive: layer cache is ordered and content-sensitive</summary>
+        <p>This teaching model assumes each changed layer invalidates all later layers. Docker cache behavior also depends on the instruction, build context, parent layer, and builder. A source change after dependency installation can reuse dependency layers; copying the whole repository before installing dependencies often makes ordinary code edits rebuild too much. A container adds a writable runtime layer on top of an image; image build and container startup are separate operations.</p>
+      </details>
+      <p class="lab-challenge"><strong>Try:</strong> Compare source-file and lock-file changes. Explain why keeping dependency installation before copying frequently changing application code can improve build reuse.</p>
+    </section>
+
+    <section class="lesson-visual deep-lab" data-lab="devops" data-topic="aws" id="aws-lab" aria-labelledby="aws-lab-title">
+      <header class="lab-heading">
+        <p class="lab-kicker">LAB 07 · AWS REQUEST ARCHITECTURE</p>
+        <h2 id="aws-lab-title">Trace traffic through a cloud boundary</h2>
+        <p>Follow a sample request through DNS, a load balancer, private application targets, and a private database. Change one health or network condition.</p>
+      </header>
+      <div class="lab-controls">
+        <label for="aws-scenario">Architecture condition
+          <select id="aws-scenario">
+            <option value="healthy">Healthy targets · private database</option>
+            <option value="no-targets">No healthy load-balancer targets</option>
+            <option value="db-unreachable">Application cannot reach database</option>
+            <option value="db-public">Database has an unsafe public route</option>
+          </select>
+        </label>
+        <button type="button" data-aws-action="start">Start request trace</button>
+        <button type="button" class="secondary" data-aws-action="next" disabled>Next hop</button>
+        <button type="button" class="secondary" data-aws-action="reset">Reset</button>
+      </div>
+      <p class="lab-feedback" data-aws-status aria-live="polite">Choose a scenario and start at DNS.</p>
+      <div class="diagram-flow aws-flow" aria-label="Simplified cloud request path">
+        <div class="diagram-node" data-aws-node="dns"><span class="node-number">01</span><strong>DNS</strong><span>Resolve app name</span></div>
+        <span class="flow-arrow" aria-hidden="true">→</span>
+        <div class="diagram-node" data-aws-node="alb"><span class="node-number">02</span><strong>Load balancer</strong><span>Public entry point</span></div>
+        <span class="flow-arrow" aria-hidden="true">→</span>
+        <div class="diagram-node" data-aws-node="app"><span class="node-number">03</span><strong>App targets</strong><span>Private subnets</span></div>
+        <span class="flow-arrow" aria-hidden="true">→</span>
+        <div class="diagram-node" data-aws-node="db"><span class="node-number">04</span><strong>Database</strong><span>Private network</span></div>
+        <span class="flow-arrow" aria-hidden="true">→</span>
+        <div class="diagram-node" data-aws-node="response"><span class="node-number">05</span><strong>Response</strong><span>Health-aware result</span></div>
+      </div>
+      <div class="request-outcome" aria-live="polite"><strong id="aws-result">—</strong><span id="aws-explanation">No cloud request simulated.</span></div>
+      <details class="deep-dive">
+        <summary>Deep dive: reachability is a chain of explicit controls</summary>
+        <p>A simplified AWS design commonly places an internet-facing load balancer in public subnets, application tasks or instances in private subnets, and the database in private subnets. Security-group rules should allow only required source-to-destination flows. Use workload identity for AWS API access rather than embedding long-lived credentials in an image. Actual availability also depends on multiple Availability Zones, health checks, DNS behavior, routing, and service-specific configuration.</p>
+      </details>
+      <p class="lab-challenge"><strong>Try:</strong> Compare a load balancer with no healthy targets to an unreachable database. Identify which component can return the error and which resource should never be publicly exposed.</p>
+    </section>
+
+    <section class="lesson-visual deep-lab" data-lab="devops" data-topic="terraform" id="terraform-lab" aria-labelledby="terraform-lab-title">
+      <header class="lab-heading">
+        <p class="lab-kicker">LAB 08 · TERRAFORM PLAN AND APPLY</p>
+        <h2 id="terraform-lab-title">Review a plan before changing state</h2>
+        <p>Compare a declared configuration with a tiny mock state. Inspect create, update, no-op, or destroy actions; apply is simulated locally only.</p>
+      </header>
+      <div class="lab-controls">
+        <label for="terraform-drift">Mock infrastructure state
+          <select id="terraform-drift">
+            <option value="aligned">Matches configuration</option>
+            <option value="web-missing">Web instance is missing</option>
+            <option value="db-drift">Database size differs</option>
+            <option value="extra-resource">Unexpected debug instance exists</option>
+          </select>
+        </label>
+        <button type="button" data-terraform-action="plan">Create plan</button>
+        <button type="button" class="secondary" data-terraform-action="reset">Reset</button>
+      </div>
+      <p class="lab-feedback" data-terraform-status aria-live="polite">No plan created.</p>
+      <div class="trace-table-wrap">
+        <table class="trace-table">
+          <caption>Mock plan: desired configuration compared with current state</caption>
+          <thead><tr><th scope="col">Resource</th><th scope="col">Desired</th><th scope="col">Planned action</th></tr></thead>
+          <tbody id="terraform-plan"><tr><td colspan="3">Create a plan to inspect proposed actions.</td></tr></tbody>
+        </table>
+      </div>
+      <label class="inline-check review-check" for="terraform-review"><input id="terraform-review" type="checkbox" disabled> I reviewed the sample plan; simulate applying it</label>
+      <button type="button" data-terraform-action="apply" disabled>Apply simulated plan</button>
+      <p class="small-print">This is an isolated teaching model. It does not read Terraform state, credentials, cloud accounts, or call the Terraform CLI.</p>
+      <details class="deep-dive">
+        <summary>Deep dive: configuration, state, plan, and drift</summary>
+        <p>Terraform configuration declares desired resources; state maps those resources to objects Terraform manages. Planning refreshes and compares observed state with configuration, then proposes actions. A saved plan can become stale as the real world changes. Review destructive replacements and secret-bearing plan output carefully; protect and back up state, restrict who can read or mutate it, and do not assume a successful apply proves application health.</p>
+      </details>
+      <p class="lab-challenge"><strong>Try:</strong> Create the unexpected-resource plan. Identify the destroy action, then compare the review checkbox with the separate plan and apply stages.</p>
+    </section>
+
+    <section class="lesson-visual deep-lab" data-lab="devops" data-topic="ansible" id="ansible-lab" aria-labelledby="ansible-lab-title">
+      <header class="lab-heading">
+        <p class="lab-kicker">LAB 09 · ANSIBLE AND IDEMPOTENCE</p>
+        <h2 id="ansible-lab-title">Predict change, apply, then run again</h2>
+        <p>Model a playbook that ensures a package is installed and a service is running. Compare check mode with an applying run, then observe idempotence.</p>
+      </header>
+      <div class="lab-controls">
+        <label for="ansible-scenario">Host condition
+          <select id="ansible-scenario">
+            <option value="ready">All hosts already configured</option>
+            <option value="drift">One host needs configuration</option>
+            <option value="unreachable">One host is unreachable</option>
+          </select>
+        </label>
+        <label class="inline-check" for="ansible-check"><input id="ansible-check" type="checkbox" checked> Check mode (predict changes only)</label>
+        <button type="button" data-ansible-action="run">Run simulated play</button>
+        <button type="button" class="secondary" data-ansible-action="reset">Reset scenario</button>
+      </div>
+      <p class="lab-feedback" data-ansible-status aria-live="polite">Choose a host condition and run the play.</p>
+      <div class="host-grid" id="ansible-hosts" aria-live="polite">
+        <article class="host-card" data-host="web-01"><strong>web-01</strong><span>Not evaluated</span></article>
+        <article class="host-card" data-host="web-02"><strong>web-02</strong><span>Not evaluated</span></article>
+        <article class="host-card" data-host="web-03"><strong>web-03</strong><span>Not evaluated</span></article>
+      </div>
+      <div class="state-grid">
+        <article class="state-card"><span>ok</span><strong id="ansible-ok">—</strong></article>
+        <article class="state-card"><span>changed</span><strong id="ansible-changed">—</strong></article>
+        <article class="state-card"><span>unreachable</span><strong id="ansible-unreachable">—</strong></article>
+        <article class="state-card"><span>Run number</span><strong id="ansible-run">0</strong></article>
+      </div>
+      <details class="deep-dive">
+        <summary>Deep dive: idempotence and check-mode limits</summary>
+        <p>An idempotent task converges a host toward the requested state; rerunning it after successful convergence should not report the same change again. Check mode predicts changes for supported modules but is not a universal proof that every task is side-effect-free or will succeed. Unreachable hosts are not the same as hosts whose tasks failed; inspect each result and handle partial fleet success deliberately.</p>
+      </details>
+      <p class="lab-challenge"><strong>Try:</strong> Run the drift scenario in check mode, then apply it, then apply it again. Explain why the second applying run should report the host as unchanged.</p>
+    </section>
+
+    <section class="lesson-visual deep-lab" data-lab="devops" data-topic="git" id="git-lab" aria-labelledby="git-lab-title">
+      <header class="lab-heading">
+        <p class="lab-kicker">LAB 10 · GIT BRANCH INTEGRATION</p>
+        <h2 id="git-lab-title">Read the commit graph before merging</h2>
+        <p>Choose whether branches stayed together, diverged cleanly, or changed the same line. Observe fast-forward, merge commit, or conflict resolution.</p>
+      </header>
+      <div class="lab-controls">
+        <label for="git-scenario">Branch history
+          <select id="git-scenario">
+            <option value="fast-forward">Main has not moved; feature adds commits</option>
+            <option value="clean-merge">Branches diverged; edits do not overlap</option>
+            <option value="conflict">Branches changed the same line</option>
+          </select>
+        </label>
+        <button type="button" data-git-action="merge">Simulate integration</button>
+        <button type="button" class="secondary" data-git-action="reset">Reset</button>
+      </div>
+      <p class="lab-feedback" data-git-status aria-live="polite">Choose a branch history and simulate integration.</p>
+      <div class="git-graph" aria-label="Simplified Git branch graph">
+        <div class="git-lane"><strong>main</strong><span class="commit-node" data-git-node="main-base">A · base</span><span class="git-edge" aria-hidden="true">→</span><span class="commit-node" data-git-node="main-tip">B · main</span><span class="git-edge" aria-hidden="true">→</span><span class="commit-node" data-git-node="merge-tip">M · merge</span></div>
+        <div class="git-lane feature-lane"><strong>feature</strong><span class="commit-node" data-git-node="feature-base">A · base</span><span class="git-edge" aria-hidden="true">→</span><span class="commit-node" data-git-node="feature-tip">C · feature</span></div>
+      </div>
+      <pre class="conflict-preview" data-git-conflict hidden><code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; main
+timeout = 20
+=======
+timeout = 45
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; feature</code></pre>
+      <div class="lab-controls conflict-controls" data-git-resolution hidden>
+        <label for="git-resolution">Resolve the sample line
+          <select id="git-resolution">
+            <option value="main">Keep main value: 20</option>
+            <option value="feature">Keep feature value: 45</option>
+          </select>
+        </label>
+        <button type="button" data-git-action="resolve">Mark resolved and create merge commit</button>
+      </div>
+      <p class="request-outcome" data-git-result aria-live="polite">No merge simulated.</p>
+      <details class="deep-dive">
+        <summary>Deep dive: a merge commit preserves two parents</summary>
+        <p>A fast-forward moves a branch pointer when its history is already an ancestor of the incoming branch. Diverged branches need a merge commit unless rebased; a textual conflict occurs when Git cannot combine overlapping edits automatically. Resolving a conflict means editing the file to the intended final content, removing markers, testing it, and committing the merge. Rebase rewrites commit identities and should be used with care on shared history.</p>
+      </details>
+      <p class="lab-challenge"><strong>Try:</strong> Compare the fast-forward and clean-merge graphs. For the conflict case, choose each resolution and explain why Git cannot decide which value is correct.</p>
+    </section>
+
+    <section class="lesson-visual deep-lab" data-lab="devops" data-topic="kubernetes" id="kubernetes-lab" aria-labelledby="kubernetes-lab-title">
+      <header class="lab-heading">
+        <p class="lab-kicker">LAB 11 · KUBERNETES RECONCILIATION</p>
+        <h2 id="kubernetes-lab-title">Watch desired state meet pod health</h2>
+        <p>A Deployment requests three replicas. Reconcile the mock cluster and inspect pod states, readiness, and which pods become Service endpoints.</p>
+      </header>
+      <div class="lab-controls">
+        <label for="k8s-scenario">New pod behavior
+          <select id="k8s-scenario">
+            <option value="ready">Container starts and readiness probe passes</option>
+            <option value="image-pull">Image cannot be pulled</option>
+            <option value="readiness">Container runs but readiness probe fails</option>
+            <option value="liveness">Liveness probe repeatedly fails</option>
+          </select>
+        </label>
+        <button type="button" data-k8s-action="reconcile">Reconcile desired state</button>
+        <button type="button" class="secondary" data-k8s-action="reset">Reset</button>
+      </div>
+      <p class="lab-feedback" data-k8s-status aria-live="polite">Desired replicas: 3 · No reconciliation run.</p>
+      <div class="diagram-flow k8s-flow" aria-label="Kubernetes controller flow">
+        <div class="diagram-node is-complete"><span class="node-number">01</span><strong>API object</strong><span>Deployment: 3 replicas</span></div>
+        <span class="flow-arrow" aria-hidden="true">→</span>
+        <div class="diagram-node is-complete"><span class="node-number">02</span><strong>Controller</strong><span>Reconcile desired state</span></div>
+        <span class="flow-arrow" aria-hidden="true">→</span>
+        <div class="diagram-node"><span class="node-number">03</span><strong>Pods</strong><span>Run image and probes</span></div>
+        <span class="flow-arrow" aria-hidden="true">→</span>
+        <div class="diagram-node"><span class="node-number">04</span><strong>Service</strong><span>Ready endpoints only</span></div>
+      </div>
+      <div class="pod-grid" id="k8s-pods" aria-live="polite">
+        <article class="pod-card"><strong>app-7c9d-a1</strong><span>Not created</span></article>
+        <article class="pod-card"><strong>app-7c9d-b2</strong><span>Not created</span></article>
+        <article class="pod-card"><strong>app-7c9d-c3</strong><span>Not created</span></article>
+      </div>
+      <div class="state-grid">
+        <article class="state-card"><span>Ready replicas</span><strong id="k8s-ready">0 / 3</strong></article>
+        <article class="state-card"><span>Service endpoints</span><strong id="k8s-endpoints">0</strong></article>
+        <article class="state-card"><span>Rollout</span><strong id="k8s-rollout">Not started</strong></article>
+      </div>
+      <details class="deep-dive">
+        <summary>Deep dive: controllers reconcile; Services select ready endpoints</summary>
+        <p>The Deployment controller creates or updates a ReplicaSet; the ReplicaSet attempts to maintain the requested pod count. A pod can exist but fail readiness, in which case it should not receive Service traffic. Image-pull errors prevent startup; repeated liveness failures can trigger restarts and back-off. Real rollout progress also depends on update strategy, readiness thresholds, resource limits, scheduling, and cluster events.</p>
+      </details>
+      <p class="lab-challenge"><strong>Try:</strong> Compare image-pull failure, readiness failure, and liveness failure. Which states have a running container, and which pods are eligible as Service endpoints?</p>
+    </section>
+
+    <footer class="visual-footer panel">
+      <h2>Make the visualization a study method</h2>
+      <ol>
+        <li>Write down what you expect before pressing a control.</li>
+        <li>Change one input at a time; compare the result to your prediction.</li>
+        <li>Explain the invariant, permission rule, or failure boundary in your own words.</li>
+        <li>Open the linked daily lesson to connect the model to syntax and practice.</li>
+      </ol>
+      <p>All examples are intentionally small. Real systems add framework versions, persistence, distributed failures, privacy constraints, and operational review.</p>
+    </footer>
+  </main>
+  <script src="../frontend/js/visualizer.js" defer></script>
+  <script src="../frontend/js/infrastructure-labs.js" defer></script>
+</body>
+</html>
